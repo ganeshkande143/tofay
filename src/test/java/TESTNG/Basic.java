@@ -37,10 +37,25 @@ public class Basic
 		System.out.println("gt cookies");
 	}
 	
-	@Test
-	public void BusinessLogic()
+	@Test(priority = 1)
+	public void ZABC()
 	{
-		System.out.println("BL");
+		System.out.println("ZABC");
+		
+	}
+	
+
+	@Test(priority = 3)
+	public void YCDE()
+	{
+		System.out.println("YCDE");
+		
+	}
+	
+	@Test(priority = 2)
+	public void XFGI()
+	{
+		System.out.println("XFGI");
 		
 	}
 	

@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TESTNG.Single_test" hash-for-method="BusinessLogic_Two">BusinessLogic_Two</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TESTNG.Single_test" hash-for-method="BusinessLogic_one">BusinessLogic_one</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TESTNG.A" hash-for-method="BusinessLogic_one(sonawanesushil57@gmail.com, Sushil@123)">BusinessLogic_one(sonawanesushil57@gmail.com, Sushil@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,21 +122,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TESTNG.Single_test</span>
+              <span class="class-name">TESTNG.A</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BusinessLogic_Two">
-                  </a> <!-- BusinessLogic_Two -->
-                  <span class="method-name">BusinessLogic_Two</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="BusinessLogic_one">
-                  </a> <!-- BusinessLogic_one -->
+                  <a name="BusinessLogic_one(sonawanesushil57@gmail.com, Sushil@123)">
+                  </a> <!-- BusinessLogic_one(sonawanesushil57@gmail.com, Sushil@123) -->
                   <span class="method-name">BusinessLogic_one</span>
+                  <span class="parameters">(sonawanesushil57@gmail.com, Sushil@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -156,9 +145,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;Sushil@123&quot;/&gt;
+  &lt;parameter name=&quot;username&quot; value=&quot;sonawanesushil57@gmail.com&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TESTNG.Single_test&quot;/&gt;
+      &lt;class name=&quot;TESTNG.A&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -198,20 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'BusinessLogic_Two')
-data.setCell(0, 2, 'TESTNG.Single_test')
-data.setCell(0, 3, 30714);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'BusinessLogic_one')
-data.setCell(1, 2, 'TESTNG.Single_test')
-data.setCell(1, 3, 29369);
+data.setCell(0, 1, 'BusinessLogic_one')
+data.setCell(0, 2, 'TESTNG.A')
+data.setCell(0, 3, 17290);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -237,54 +224,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TESTNG.Single_test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TESTNG.A</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">openbroser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">url</span>
-                <span class="method-start">3555 ms</span>
+                <span class="method-start">3465 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">maximize</span>
-                <span class="method-start">15269 ms</span>
+                <span class="method-start">18816 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">getcookies</span>
-                <span class="method-start">15455 ms</span>
+                <span class="method-start">18966 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">BusinessLogic_Two</span>
-                <span class="method-start">15461 ms</span>
+                <span class="method-name">BusinessLogic_one(sonawanesushil57@gmail.com, Sushil@123)</span>
+                <span class="method-start">18969 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takescreenshot</span>
-                <span class="method-start">46181 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">getcookies</span>
-                <span class="method-start">46185 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">BusinessLogic_one</span>
-                <span class="method-start">46186 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">takescreenshot</span>
-                <span class="method-start">75557 ms</span>
+                <span class="method-start">36265 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">dltcookies</span>
-                <span class="method-start">75558 ms</span>
+                <span class="method-start">37213 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">dbconnectionclosed</span>
-                <span class="method-start">75562 ms</span>
+                <span class="method-start">37216 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">75603 ms</span>
+                <span class="method-start">37249 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
