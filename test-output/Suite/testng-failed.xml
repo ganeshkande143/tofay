@@ -2,22 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="password" value="Sushil@123"/>
-    <parameter name="username" value="sonawanesushil57@gmail.com"/>
+    <groups>
+      <run>
+        <include name="basic_tc2"/>
+      </run>
+    </groups>
     <classes>
-      <class name="TESTNG.A">
+      <class name="TESTNG.Groups_">
         <methods>
-          <include name="BusinessLogic_one"/>
-          <include name="closebrowser"/>
-          <include name="openbroser"/>
-          <include name="dltcookies"/>
-          <include name="getcookies"/>
-          <include name="url"/>
-          <include name="takescreenshot"/>
-          <include name="maximize"/>
-          <include name="dbconnectionclosed"/>
+          <include name="BusinessLogic_three"/>
+          <include name="BusinessLogic_four"/>
         </methods>
-      </class> <!-- TESTNG.A -->
+      </class> <!-- TESTNG.Groups_ -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

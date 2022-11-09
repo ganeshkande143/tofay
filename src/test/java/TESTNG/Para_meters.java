@@ -1,17 +1,10 @@
 package TESTNG;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -20,11 +13,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class A 
+public class Para_meters 
 
 {
 	WebDriver driver;
@@ -58,13 +50,11 @@ public class A
 		System.out.println("gt cookies");
 	}
 	
-	
-	
-	@Test()
+	@Test
 	@Parameters({"username","password"})
-	public void BusinessLogic_one(String email , String pass) throws InterruptedException
+	public void BusinessLogic_one(String email, String pass) throws InterruptedException
 	{
-		System.out.println("Test one ");
+		System.out.println("Test one completed");
 		
 		
 		Actions act= new Actions(driver);
@@ -73,8 +63,10 @@ public class A
 		driver.findElement(By.xpath("(//a[@data-target='#modalLogin'])[2]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.id("sign_user_email")).sendKeys(email);
+		//sendKeys("sonawanesushil5700@gmail.com");
 		Thread.sleep(2000);
 		driver.findElement(By.id("sign_user_password")).sendKeys(pass);
+		//sendKeys("Sushil@123");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//button[contains(text(),'Log in')])[1]")).click();
 		Thread.sleep(2000);
@@ -89,10 +81,8 @@ public class A
 			driver.findElement(By.id("sign_user_password")).clear();
 			Thread.sleep(2000);
 			driver.findElement(By.id("sign_user_email")).sendKeys(email);
-			//sendKeys("sonawanesushil57@gmail.com");
 			Thread.sleep(2000);
 			driver.findElement(By.id("sign_user_password")).sendKeys(pass);
-			//sendKeys("Sushil@123");
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("(//button[contains(text(),'Log in')])[1]")).click();
 			Thread.sleep(2000);
@@ -110,18 +100,13 @@ public class A
 		
 	}
 	
-	 
 	
+
 	
 	@AfterMethod
-	public void takescreenshot() throws IOException
+	public void takescreenshot()
 	{
 		System.out.println("Take screenshot");
-		
-		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFileToDirectory(src, new File("D:\\Study\\WORKSPACE JAVA\\eclipse-workspace\\B10_Automation\\screenshots"));
-		
-		
 	}
 	
 	@AfterClass
